@@ -1,0 +1,38 @@
+body {
+    font-family: "Lato", sans-serif;
+	/*background-image:url("aboutus1.jpg");*/
+	background-color:white;
+}
+
+/* Fixed sidenav, full height */
+.sidenav {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+.sidenav {   background-image: url("aboutus.jpg");
+background-repeat:no-repeat;
+background-repeat:repeat-y;
+background-position:top left;
+background-attachment:Fixed;}
+
+
+/* Style the sidenav links and the dropdown button */
+.sidenav a, .submenyja {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+}

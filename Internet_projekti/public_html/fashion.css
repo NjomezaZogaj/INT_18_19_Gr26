@@ -1,0 +1,19 @@
+.navbar {
+    overflow: hidden;
+    font-family:monospace;
+	margin-left:300px;
+	width:1000px;
+}
+
+.navbar a {
+    float: left;
+    font-size: 14px;
+    color: black;
+    text-align: center;
+    padding: 14px 30px;
+    text-decoration: none;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;

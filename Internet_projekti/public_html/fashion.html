@@ -1,0 +1,32 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+<link rel="stylesheet" href="fashion.css">
+<script src="fashion.js"></script>
+<script>
+function appendText() {
+    var txt1 = "<ol start='4'><li ><q>How can you live the high life if you do not wear the high heels?</q> —Sonia Rykiel.</li></ol>";              // Create text with HTML
+    var txt2 = "<ol start='5'><li ><q>Shoes transform your body language and attitude. They lift you physically and emotionally.</q> —Christian Louboutin.</li></ol>";  // Create text with jQuery
+    var txt3 = document.createElement("p");
+    txt3.innerHTML = "<ol start='6'><li ><q>Girls do not dress for boys. They dress for themselves, and of course, each other. If girls dressed for boys, they’d just walk around naked at all times.</q>—Betsey Johnson.</li></ol>";               // Create text with DOM
+    $("body").append(txt1, txt2, txt3);     // Append new elements
+}
+	</script>
+        <style>
+            
+        </style>
+</head>
+<body>
+    
+    
+    
+    
+    
+    
+    
+</body>

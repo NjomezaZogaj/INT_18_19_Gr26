@@ -17,6 +17,22 @@ function appendText() {
     $("body").append(txt1, txt2, txt3);     // Append new elements
 }
 	</script>
+        <script> 
+$(document).ready(function(){
+    $("#flip").click(function(){
+        $("#panel").slideToggle("slow");
+    });
+});
+</script>
+<script>
+//Perdorimi i jQuery attr() metodes qe perdoret me marr(Get) vlerat e atributit 
+
+$(document).ready(function(){
+    $("#vsbuton").click(function(){
+        alert($("#w3s").attr("href"));
+    });
+});
+</script>
         <style>
             
         </style>

@@ -71,3 +71,32 @@ background-attachment:Fixed;}
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
 }
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 15px;
+
+    user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 5px;
+    height: 20px;
+    width:20px;
+    background-color: #eee;
+}

@@ -188,7 +188,7 @@ border-radius:13px;
  
 @font-face {
   font-family: 'MyWebFont';
-  src:url('webfont.woff') format('woff'), /* Pretty Modern Browsers */     
+  src:url('webfont.woff') format('woff');/* Pretty Modern Browsers */     
 }
 #div5 {
    font-family:'MyWebFont', Fallback, sans-serif;

@@ -36,3 +36,28 @@ background-attachment:Fixed;}
     cursor: pointer;
     outline: none;
 }
+
+/* On mouse-over */
+.sidenav a:hover, .submenyja:hover {
+    color: black;
+}
+
+/* Main content */
+.main {
+    margin-left: 200px; /* Same as the width of the sidenav */
+    font-size: 20px; /* Increased text to enable scrolling */
+    padding: 0px 10px;
+}
+
+/* Add an active class to the active dropdown button */
+.active {
+    background-color: #ff9999;
+    color: white;
+}
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.dropdown-container {
+    display: none;
+    background-color:white;
+    padding-left: 8px;
+}

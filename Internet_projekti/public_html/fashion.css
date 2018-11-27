@@ -141,3 +141,35 @@ border-radius:13px;
 * {
     box-sizing: border-box;
 }
+.column1 {
+    float: left;
+    width: 25%;
+    padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row1::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 500px) {
+    .column1 {
+        width: 100%;
+    }
+}
+.panel1{
+    padding: 5px;
+    text-align: center;
+    background-color:#e6f2ff;
+    border: solid 1px #c3c3c3;
+}
+
+.panel1 {
+    padding: 50px;
+    display: none;
+}
+
+ h2 {text-shadow:3px 2px 3px  #3399ff;}

@@ -173,3 +173,23 @@ border-radius:13px;
 }
 
  h2 {text-shadow:3px 2px 3px  #3399ff;}
+ 
+ 
+ #show1{-ms-transform: skew(20deg); /* IE 9 */
+    -webkit-transform: skew(20deg); /* Safari */
+ transform: skew(20deg);}
+ #show2{
+	 margin-top:30px;
+ transform: rotate(20deg);}
+ #show3 { 
+ transform: matrix(1, -0.3, 0, 1, 0, 0); /* Standard syntax */}
+  #show4{
+ transform: skew(15deg);}
+ 
+@font-face {
+  font-family: 'MyWebFont';
+  src:url('webfont.woff') format('woff'), /* Pretty Modern Browsers */     
+}
+#div5 {
+   font-family:'MyWebFont', Fallback, sans-serif;
+}

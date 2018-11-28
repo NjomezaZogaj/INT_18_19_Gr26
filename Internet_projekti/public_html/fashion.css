@@ -192,8 +192,7 @@ border-radius:13px;
 }
 #div5 {
    font-family:'MyWebFont', Fallback, sans-serif;
-}
-Fashion.html
+
 * {
     box-sizing: border-box;
 }
@@ -209,17 +208,17 @@ Fashion.html
 .row5::after {
     content: "";
     clear: both;
-    display: table;
-	
+    display: table;	
 	
 }
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 500px)
+ {  
     .column5 {
         width: 100%;
     }
-}
+ }
 
 
 #show11 {

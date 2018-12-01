@@ -235,3 +235,14 @@ border-radius:13px;}
 
 #show56{  transform: translate(20px,5px);
 border-radius:13px;}
+
+
+
+#div7 {
+   
+    background: red;
+    position: relative;
+    -webkit-animation: mymove 5s infinite; /* Safari 4.0 - 8.0 */
+    animation: mymove 5s infinite;
+}
+

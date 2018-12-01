@@ -74,3 +74,8 @@ $(document).ready(function(){
         $("#p22").hide(1000);
         alert("Her father is Italian, her mother was French-Canadian.");
     });
+    
+    $("#but3").click(function(){
+        $("#p33").hide(1000);
+        alert("She spoke five languages.");
+    });

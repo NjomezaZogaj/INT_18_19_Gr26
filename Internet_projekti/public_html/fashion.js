@@ -19,5 +19,8 @@ $(document).ready(function(){
         $(".panel1").slideToggle("slow");
     });
 });
-
+function numrimaksimal()
+{
+    document.getElementById("demo1").innerHTML = Math.max(25000,200000,30000,17000000)+" dollars";
+}
 

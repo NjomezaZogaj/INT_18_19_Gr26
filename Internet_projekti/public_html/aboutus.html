@@ -170,6 +170,24 @@ height:180px;}
     <a href="travelfood.html">Travel and Food</a>
   </div>
 </div>
+    <script>
+/* Loop through all dropdown buttons to toggle between hiding 
+and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+var dropdown = document.getElementsByClassName("submenyja");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var dropdownContent = this.nextElementSibling;
+    if (dropdownContent.style.display === "block") {
+      dropdownContent.style.display = "none";
+    } else {
+      dropdownContent.style.display = "block";
+    }
+  });
+}
+</script>
   <p id="para1" style="Text-align:Center;">
 <q id="qq">The more that you read, the more things you will know. The more that you learn, the more places you’ll go.</q> <cite>– Dr. Seuss</cite>
 <div class="row">

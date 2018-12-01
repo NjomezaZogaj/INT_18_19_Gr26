@@ -51,5 +51,12 @@ $(document).ready(function(){
 	$("#icon3").click(function(){
         $("#test3").text("Audrey Hepburn");
     });
+	$("#icon4").click(function(){
+        $("#test4").text("Michael Jackson");
+    });
+	
+	$("#icon5").click(function(){
+        $("#test5").text("Naomi Campell");
+    });
 	
 

@@ -254,5 +254,13 @@ document.getElementById("span1").innerHTML = cities[0];
 <br>
 <button onclick="myFunction()" style="border-radius:8px;padding:8px;color:white;background-color:rgb(240, 179, 255)">The tallest models of all time are:</button>
 <i id="mod2"></i><br><br>
+<script>
+var models = ["Michelle Buswell", " Karlie Kloss", "Amazon Eve", "Hana Soukupova"];
+document.getElementById("mod2").innerHTML = models;
+
+function myFunction() {
+    models.sort();
+    document.getElementById("mod2").innerHTML = models;
+}</script>
 </body>
 </html>

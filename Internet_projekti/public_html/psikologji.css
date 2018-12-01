@@ -90,3 +90,8 @@ border:1px solid blue;
 border-radius:30px;
 
 }
+#img1 {float:right;}
+
+* {
+    box-sizing: border-box;
+}

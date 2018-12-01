@@ -268,3 +268,9 @@ body {
 .row1 {
     margin: 8px -16px;
 }
+/* Create four equal columns that floats next to each other */
+.column1 {
+    float: left;
+    width: 25%;
+}
+

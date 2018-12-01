@@ -161,3 +161,7 @@ border-radius:30px;
 #prova {padding:10px;
 background-color:rgb(0, 204, 102);
 border-radius:3px;}
+
+table {border-collapse:collapse;
+margin:auto;}
+td,th {padding:4px;}

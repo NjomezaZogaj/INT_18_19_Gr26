@@ -87,3 +87,10 @@ $(document).ready(function(){
         $("#p55").hide(1000);
         alert("She began modeeling at age 15, becoming the first black woman on the cover of French Vogue at 18.");
     }); 
+    $("#but6").click(function(){
+        $("#p66").hide(1000);
+        alert("Her old sister,dated prince Charles before Diana did.");
+    });
+});
+
+

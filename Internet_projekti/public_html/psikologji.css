@@ -58,3 +58,7 @@ body {
 }
 #video1{ border-radius:10px;
 }
+
+button.buton1 { border-radius:10px;
+padding:10px;
+background-color:lightblue;}

@@ -281,3 +281,26 @@ Shfletuesi juaj nuk mbeshtet videot me HTML5.
 <p style="Text-indent:60px;font-size:14px;font-family:cursive;">Video1:How To Calm Down During A Panic Attack</p>
 
 </div>
+!-- Definimi i funksioneve dhe localStorage -->
+<script>
+var myVideo=document.getElementById("video1");
+
+function playPause()
+ {
+	if (myVideo.paused)
+	myVideo.play();
+	else
+	myVideo.pause();
+}
+function makeBig()
+ {
+	myVideo.width=500;
+}
+function makeSmall()
+{
+	myVideo.width=350;
+}
+function makeNormal()
+{
+	myVideo.width=420;
+}

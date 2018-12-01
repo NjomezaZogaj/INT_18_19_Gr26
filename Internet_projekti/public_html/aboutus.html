@@ -385,8 +385,18 @@ $(document).ready(function(){
 		<p style="font-size:22px;font-family:Monospace;text-decoration:underline;color:#ff99cc;">OUR TEAM</p>
                 <dt>-Tomas Jurcik</dt>
 <dd><em>Tomas is a seasoned comp&ben expert having spent almost <em id="numer"></em> years in various senior C&B. </em> </dd><BR>
-
-
+<script><!-- Perdorim i nje JS operatori per shumezim *-->
+var x=4,y=5,z;
+z=x*y;
+document.getElementById("numer").innerHTML=z;
+</script>
+<dt>-<span id="var1"></span> Svanström</dt>
+<!-- perdorimi i nje JS variable string -->
+<script>
+var str1="Carl";
+var str2="Gustav";
+document.getElementById("var1").innerHTML=str1+" "+str2;
+</script>
 
 
 

@@ -195,3 +195,9 @@ caption { caption-side:bottom;}
   width: 100%;
   padding: 20px;
 }
+#div12 {
+    width: 350px;
+    height: 70px;
+    padding: 10px;
+    border: 1px solid #aaaaaa;
+}

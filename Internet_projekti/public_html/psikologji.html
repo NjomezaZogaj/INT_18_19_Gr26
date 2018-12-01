@@ -304,3 +304,21 @@ function makeNormal()
 {
 	myVideo.width=420;
 }
+function clickCounter()
+ {
+    if(typeof(Storage) !== "undefined") {
+        if (localStorage.clickcount) {
+            localStorage.clickcount = Number(localStorage.clickcount)+1;
+        } else 
+		{
+            localStorage.clickcount = 1;
+        }
+		 document.getElementById("div1").innerHTML = "Keni shikuar videon " + localStorage.clickcount + " here."; 
+       
+	}
+     else 
+	 {
+        document.getElementById("div1").innerHTML = " Browseri juaj nuk e perkrah localstorage..."; 
+	  
+    }
+}

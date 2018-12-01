@@ -79,3 +79,7 @@ $(document).ready(function(){
         $("#p33").hide(1000);
         alert("She spoke five languages.");
     });
+     $("#but4").click(function(){
+        $("#p44").hide(1000);
+        alert("Michael Jackson is The Most-Awarded Artist Of All Time. ");
+    });

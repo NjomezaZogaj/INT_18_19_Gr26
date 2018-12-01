@@ -459,7 +459,19 @@ audience of media and fashion buyers. Over 50 catwalk shows on the official show
 <i>2.Click the button to read the name of the inventor of modern bikini.</i>
 <button onclick="funksioni2()">Click</button>
 <i id="prova2" style="text-transform:uppercase;color:red;"></i>
+<script>
+function funksioni2() {
+    var str = "Louis Rerard named it after the Bikini Atoll where the U.S. did extensive nuclear testing";
 
+    //look for "Hello"
+    var patt = /Louis Rerard/g;
+    var rezultati = patt.exec(str);
+
+   
+    document.getElementById("prova2").innerHTML = rezultati;
+}
+</script>
+<br>
 
 
 

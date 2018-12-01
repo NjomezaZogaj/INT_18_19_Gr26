@@ -53,7 +53,13 @@ function clickCounter() {
 	float:left;
     width: 30%;
     padding: 30px;
-}   
+}
+/* Clearfix (clear floats) */
+.row ::after {
+    content: "";
+    clear: both;
+    display: table;
+}
     
     
     

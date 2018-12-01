@@ -83,3 +83,7 @@ $(document).ready(function(){
         $("#p44").hide(1000);
         alert("Michael Jackson is The Most-Awarded Artist Of All Time. ");
     });
+    $("#but5").click(function(){
+        $("#p55").hide(1000);
+        alert("She began modeeling at age 15, becoming the first black woman on the cover of French Vogue at 18.");
+    }); 

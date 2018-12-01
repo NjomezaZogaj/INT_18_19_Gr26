@@ -59,4 +59,8 @@ $(document).ready(function(){
         $("#test5").text("Naomi Campell");
     });
 	
-
+$("#icon6").click(function(){
+        $("#test6").text("Princess Diana");
+    });
+	
+});

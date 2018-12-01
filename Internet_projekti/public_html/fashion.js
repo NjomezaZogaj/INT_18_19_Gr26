@@ -44,4 +44,12 @@ $(document).ready(function(){
  $("#icon1").click(function(){
         $("#test1").text("Twiggy");
     });
+    $("#icon2").click(function(){
+        $("#test2").text("Madonna");
+    });
+	
+	$("#icon3").click(function(){
+        $("#test3").text("Audrey Hepburn");
+    });
+	
 

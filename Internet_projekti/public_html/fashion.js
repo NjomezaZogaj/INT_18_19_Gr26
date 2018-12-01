@@ -35,5 +35,9 @@ function myFunction2() {
     var n = num.toString();
     document.getElementById("demo4").innerHTML = n;
 }
-
+function myFunction3() {
+    var str = document.getElementById("demo5").innerHTML; 
+    var res = str.replace("England", "Moscow");
+    document.getElementById("demo5").innerHTML = res;
+}
 

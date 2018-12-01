@@ -36,3 +36,11 @@ body {
 .navbar a:hover, .subnav:hover .subnavbtn {
     background-color: red;
 }
+.subnav-content {
+    display: none;
+    position: absolute;
+    left: 0;
+    background-color:black;
+    width: 100%;
+    z-index: 1;
+}

@@ -212,15 +212,11 @@ border-radius:13px;
 	
 }
 
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 500px)
- {  
+ @media screen and (max-width: 500px) {
     .column5 {
-        width: 100%;
+        width:100%;
     }
- }
-
-
+}
 #show11 {
     -webkit-transform: rotateY(170deg); /* Safari */
 	border-radius:13px;

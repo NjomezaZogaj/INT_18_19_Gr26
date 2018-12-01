@@ -49,3 +49,7 @@ body {
     color: white;
     text-decoration: none;
 }
+.subnav-content a:hover {
+    background-color: #eee;
+    color: black;
+}

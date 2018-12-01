@@ -15,6 +15,21 @@
   });
 });
 </script>
+<script>
+$(document).ready(function(){
+    $("#qq").on({
+        mouseenter: function(){
+            $(this).css("background-color", "#f0b3ff");
+        },  
+        mouseleave: function(){
+            $(this).css("background-color", "#ffb3b3");
+        }, 
+        click: function(){
+            $(this).css("background-color", "#ff99ff");
+        }  
+    });
+});
+
 <style>   
 </style>
 </head>

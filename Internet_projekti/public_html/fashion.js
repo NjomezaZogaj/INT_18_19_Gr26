@@ -40,4 +40,8 @@ function myFunction3() {
     var res = str.replace("England", "Moscow");
     document.getElementById("demo5").innerHTML = res;
 }
+$(document).ready(function(){
+ $("#icon1").click(function(){
+        $("#test1").text("Twiggy");
+    });
 

@@ -165,3 +165,9 @@ border-radius:3px;}
 table {border-collapse:collapse;
 margin:auto;}
 td,th {padding:4px;}
+
+th{background-color:#80ffbf;}
+
+td:hover { background-color:hsl(288, 100%, 80%);}
+
+caption { caption-side:bottom;}

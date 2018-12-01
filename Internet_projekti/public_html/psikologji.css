@@ -171,3 +171,15 @@ th{background-color:#80ffbf;}
 td:hover { background-color:hsl(288, 100%, 80%);}
 
 caption { caption-side:bottom;}
+
+
+* {
+  box-sizing: border-box;
+}
+
+
+.container2 {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+}

@@ -235,6 +235,26 @@ margin-top:-450px;}
   <div class="overlay">
     <div class="text"><p id="demo"></p> </div>
 	<p id="demo"></p>
+        <script>
+
+//Perdorimi i metodes brenda konstruktorit
+function Sportist(first, last, month, year) {
+    this.firstName = first;
+    this.lastName = last;
+    this.month=month;
+    this.year = year;
+    this.name = function() {
+        return this.firstName + " " + this.lastName
+    };
+}
+
+var atlet = new Sportist("Usain", "Bolt", "August",1986 );
+
+
+document.getElementById("demo").innerHTML =
+ atlet.name()+ " born on 21 "+atlet.month+" "+atlet.year+" is a Jamaican retired sprinter and world record holder in the 100 metres, 200 metres and 4 × 100 metres relay.";
+
+</script>
         
         
         

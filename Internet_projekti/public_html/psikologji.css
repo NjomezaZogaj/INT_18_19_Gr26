@@ -82,3 +82,11 @@ background-color:lightblue;}
 #myBtn:hover {
   background-color: #555;
 }
+
+#div3 {width:1000px;
+height:420px;
+margin:Auto;
+border:1px solid blue;
+border-radius:30px;
+
+}

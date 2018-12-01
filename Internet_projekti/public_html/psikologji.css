@@ -62,3 +62,18 @@ body {
 button.buton1 { border-radius:10px;
 padding:10px;
 background-color:lightblue;}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 12px;
+  right: 3px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #b3ccff;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+}

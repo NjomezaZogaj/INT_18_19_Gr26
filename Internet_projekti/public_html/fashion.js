@@ -30,3 +30,10 @@ function myFunction1() {
     document.getElementById("demo3").innerHTML = res;
 }
 
+function myFunction2() {
+    var num = 87;
+    var n = num.toString();
+    document.getElementById("demo4").innerHTML = n;
+}
+
+

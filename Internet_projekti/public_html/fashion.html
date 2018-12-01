@@ -353,6 +353,21 @@ document.getElementById("model1").innerHTML =
 person.firstName + " " + person.lastName;
 </script>
 
+<script>
+// Create an object:
+var person = {
+    firstName: "Candice",
+    lastName : "Seanepoel",
+    bornYear      : 1988,
+    fullName : function() {
+       return this.firstName + " " + this.lastName;
+    }
+};
+
+// Display data from the object:
+document.getElementById("model2").innerHTML = person.fullName();
+</script>
+
 
 
 

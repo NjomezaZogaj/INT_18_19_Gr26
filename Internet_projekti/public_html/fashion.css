@@ -258,3 +258,9 @@ body {
     padding: 20px;
     font-family: Arial;
 }
+
+/* Center website */
+.main1 {
+    max-width: 1000px;
+    margin: auto;
+}

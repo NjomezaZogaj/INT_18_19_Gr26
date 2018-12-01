@@ -218,11 +218,11 @@ border-radius:13px;
     }
 }
 #show11 {
-    -webkit-transform: rotateY(170deg); /* Safari */
+    transform: rotateY(170deg); /* Safari */
 	border-radius:13px;
 }
 #show22 {
-    -webkit-transform: rotateY(140deg); /* Safari */
+    transform: rotateY(140deg); /* Safari */
 	border-radius:13px;
 }
 #show55{

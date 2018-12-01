@@ -212,11 +212,6 @@ border-radius:13px;
 	
 }
 
- @media screen and (max-width: 500px) {
-    .column5 {
-        width:100%;
-    }
-}
 #show11 {
     transform: rotateY(170deg); /* Safari */
 	border-radius:13px;
@@ -241,14 +236,7 @@ border-radius:13px;}
     -webkit-animation: mymove 5s infinite; /* Safari 4.0 - 8.0 */
     animation: mymove 5s infinite;
 }
-/* Standard syntax */
-@keyframes mymove {
-    0%   {top: 0px; left: 0px; background: #cce6ff;}
-    25%  {top: 0px; left: 20px; background:#ffd9b3;}
-    50%  {top: 50px; left: 20px; background: #ffb3b3;}
-    75%  {top: 50px; left: 0px; background: #ffccff;}
-    100% {top: 0px; left: 0px; background: #cce6ff;}
-}
+
 body {
     background-color: #f1f1f1;
     padding: 20px;
@@ -288,4 +276,12 @@ body {
     .column1 {
         width: 100%;
     }
+}
+/* Standard syntax */
+@keyframes mymove {
+    0%   {top: 0px; left: 0px; background: #cce6ff;}
+    25%  {top: 0px; left: 20px; background: #ffd9b3;}
+    50%  {top: 50px; left: 20px; background: #ffb3b3;}
+    75%  {top: 50px; left: 0px; background: #ffccff;}
+    100% {top: 0px; left: 0px; background: #cce6ff;}
 }

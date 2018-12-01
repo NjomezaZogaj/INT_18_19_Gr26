@@ -201,3 +201,9 @@ caption { caption-side:bottom;}
     padding: 10px;
     border: 1px solid #aaaaaa;
 }
+
+#imgg {
+  
+    -webkit-transition: width 2s, height 2s, -webkit-transform 2s; /* Safari */
+    transition: width 2s, height 2s, transform 2s;
+}

@@ -77,3 +77,8 @@ background-color:lightblue;}
   padding: 15px;
   border-radius: 10px;
 }
+
+
+#myBtn:hover {
+  background-color: #555;
+}

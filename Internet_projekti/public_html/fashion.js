@@ -64,3 +64,13 @@ $("#icon6").click(function(){
     });
 	
 });
+$(document).ready(function(){
+
+ $("#but1").click(function(){
+        $("#p11").hide(1000);
+        alert("Her real name is Lesley Lawson.");
+    });
+	 $("#but2").click(function(){
+        $("#p22").hide(1000);
+        alert("Her father is Italian, her mother was French-Canadian.");
+    });

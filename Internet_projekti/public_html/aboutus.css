@@ -61,6 +61,8 @@ background-attachment:Fixed;}
     background-color:white;
     padding-left: 8px;
 }
+
+/* Optional: Style the caret down icon */
 .fa-caret-down {
     float: right;
     padding-right: 8px;
@@ -71,6 +73,36 @@ background-attachment:Fixed;}
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
 }
+
+ 
+/*.monthPre{
+ color: gray;
+ text-align: center;
+}
+.monthNow{
+ color: blue;
+ text-align: center;
+}
+.dayNow{
+ border: 2px solid black;
+ color: #FF0000;
+ text-align: center;
+}
+.calendar td{
+ htmlContent: 2px;
+ width: 40px;
+}
+.monthNow th{
+ background-color: #000000;
+ color: #FFFFFF;
+ text-align: center;
+}
+.dayNames{
+ background: #0FF000;
+ color: #FFFFFF;
+ text-align: center;
+}*/
+ 
 .container {
     display: block;
     position: relative;
@@ -100,6 +132,7 @@ background-attachment:Fixed;}
     width:20px;
     background-color: #eee;
 }
+
 /* On mouse-over, add a grey background color */
 .container:hover input ~ .checkmark {
     background-color: #ccc;
@@ -132,6 +165,7 @@ background-attachment:Fixed;}
     border-width: 0 3px 3px 0;
 	    transform: rotate(45deg);
 }
+
 
 * {
     box-sizing: border-box;

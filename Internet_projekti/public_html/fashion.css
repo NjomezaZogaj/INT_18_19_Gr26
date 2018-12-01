@@ -264,3 +264,7 @@ body {
     max-width: 1000px;
     margin: auto;
 }
+
+.row1 {
+    margin: 8px -16px;
+}

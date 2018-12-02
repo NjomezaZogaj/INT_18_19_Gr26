@@ -76,7 +76,7 @@
 .permbajtja2 {
   position: relative;
   max-width: 500px;
-  margin: 0 auto;
+  margin-left:0;
 }
 
 .permbajtja2 img {vertical-align: middle;}

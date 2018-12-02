@@ -59,3 +59,10 @@
 .dropdown:hover .dropdown-content {
     display: block;
 }
+
+
+[type="button"]
+{
+    padding:10px;
+    background-color:white;
+}

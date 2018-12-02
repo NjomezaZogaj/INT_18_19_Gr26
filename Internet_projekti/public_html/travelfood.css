@@ -91,7 +91,7 @@
   width: 100%;
   padding: 20px;
 }
-#myDIV {
+#myDIV,#myDIV1 {
     width: 100%;
     padding: 50px 0;
     text-align: center;

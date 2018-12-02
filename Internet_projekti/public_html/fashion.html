@@ -231,13 +231,19 @@ document.getElementById("demo").innerHTML = "Today is " + day;
 </div>
 <div id="div5" height="500px">
 <h2 style="Text-align:center;">FASHION SHOW</h2>
-<p>
+<i id="quotess">
 A fashion show (French défilé de mode) is an event put on by a fashion designer to 
 showcase their upcoming line of clothing and/or accessories during Fashion Week.
  Fashion shows debut every season, particularly the Spring/Summer and Fall/Winter seasons. 
  This is where the latest fashion trends are made. The two most influential fashion weeks are Paris
  Fashion Week and New York Fashion Week, which are both semiannual events.The <span id="span1"></span>, London, Sibiu 
- and Berlin fashion weeks are also of global importance.</p>
+ and Berlin fashion weeks are also of global importance.</i><br>
+ <!-- PERDORIMI I DOM CSS per nderrimin e fontit dhe madhesesis -->
+<script>
+document.getElementById("quotess").style.fontFamily = "Monospace";
+document.getElementById("quotess").style.fontSize = "16px";
+
+</script>
  <!-- Perdorimi i vargut ne JS dhe qasja e elementeve brenda vargjeve-->
  <script>
 var cities = new Array("Milan", "New York", "Munich");

@@ -133,19 +133,18 @@ figure{display:inline-block;}
     text-decoration: none;
     display: inline-block;
     padding: 8px 16px;
+    margin-left:1300px;
 }
 
 #linku:hover {
-    background-color: #ddd;
+    background-color:#ffd9b3;
     color: black;
 }
 
 .previous {
-    background-color: #f1f1f1;
+    background-color:#ffb3b3;
     color: black;
 }
-
-
 
 .round {
     border-radius: 50%;

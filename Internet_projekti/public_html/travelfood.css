@@ -111,6 +111,6 @@
     padding: 50px;
     display: none;
 }
-
-table,th,td{ boder-collapse:collapse;
+table {border-collapse:collapse;}
+th,td{
 padding:10px;}

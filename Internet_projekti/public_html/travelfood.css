@@ -149,6 +149,9 @@ figure{display:inline-block;}
 .round {
     border-radius: 50%;
 }
+* {
+    box-sizing: border-box;
+}
 
 .column {
     float: left;

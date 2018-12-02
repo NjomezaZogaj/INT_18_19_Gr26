@@ -188,14 +188,14 @@ Paris. The Domforum visitor centre is a good source of info and tickets.";
     }
 }
 </script>
-<button>Hide</button>
+<button id="btn2">Hide facts about Germany</button>
 
 <p id="para1">This is a paragraph with little content.</p>
 <script>
 $(document).ready(function(){
-    $("button").click(function(){
+    $("#btn2").click(function(){
         $("#para1").hide(1000);
-        alert("The paragraph is now hidden");
+        alert("The facts are  now hidden");
     });
 });</script>
 </div>

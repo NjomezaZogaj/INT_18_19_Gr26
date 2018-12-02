@@ -111,3 +111,6 @@
     padding: 50px;
     display: none;
 }
+
+table,th,td{ boder-collapse:collapse;
+padding:10px;}

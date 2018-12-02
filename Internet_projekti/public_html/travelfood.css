@@ -149,3 +149,9 @@ figure{display:inline-block;}
 .round {
     border-radius: 50%;
 }
+
+.column {
+    float: left;
+    width: 500px;
+    padding: 35px;
+}

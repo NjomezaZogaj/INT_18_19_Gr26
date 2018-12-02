@@ -111,7 +111,8 @@
     padding: 50px;
     display: none;
 }
-table {border-collapse:collapse;}
+table {border-collapse:collapse;
+cellpadding:10px;}
 th,td{
 padding:10px;}
 caption {caption-side:bottom;}

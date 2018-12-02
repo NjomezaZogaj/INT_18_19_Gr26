@@ -116,3 +116,15 @@ th,td{
 padding:10px;}
 
 figure{display:inline-block;}
+#cherry {
+  
+    -webkit-transition: width 2s, height 2s, -webkit-transform 2s; /* Safari */
+    transition: width 2s, height 2s, transform 2s;
+}
+
+#cherry:hover {
+    width: 200px;
+    height: 200px;
+    -webkit-transform: rotate(360deg); /* Safari */
+    transform: rotate(360deg);
+}

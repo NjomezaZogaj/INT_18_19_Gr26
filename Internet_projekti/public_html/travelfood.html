@@ -385,7 +385,7 @@ Which are the Best Countries in the World for Food? Let’s start! Don’t get o
     <br><br>
     <ol id="ordlist">
     <li>Broccoli contains twice the vitamin C of an <span id="demo1"></span>.</li>
-    <li>Apples are made of 25% air, which is why they float.</li>
+    <li>Apples are made of <span id="demo4"% air, which is why they float.</li>
     <li><span id="demo2"></span> has highest protein content of all fruit.</li>
     <li>Cabbage is 91% water.</li>
     <li><span id="demo3"></span> are a member of the rose family.</li>
@@ -403,6 +403,15 @@ document.getElementById("demo3").innerHTML = fruits.slice(1,2);</script>
 <script>
 document.getElementById("paragrafi1").style.fontSize = "larger";
 document.getElementById("paragrafi1").style.fontStyle = "italic";
+</script>
+</script>
+<!-- perdorimi i nje JS funksioni -->
+<script>
+function myFunc(a,b)
+{
+return a*b;
+}
+document.getElementById("demo4").innerHTML=myFunc(5,5);
 </script>
 <img id="cherry" src="cherry.jpg" width="200" height="200" style="margin-left:800px;margin-top:-220px">
 </div>

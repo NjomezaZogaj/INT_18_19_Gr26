@@ -11,7 +11,13 @@
        <link rel="stylesheet" href="travelfood.css" type="text/css">
  
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        		<!-- PERDORIMI I JQUERY duke perdorur selektroin tr:odd per ngjyren e prapavijes-->
 
+<script>
+$(document).ready(function(){
+    $("tr:odd").css("background-color", "#ffe6cc");
+});
+</script>
         <script> 
 $(document).ready(function(){
     $("#flip").click(function(){

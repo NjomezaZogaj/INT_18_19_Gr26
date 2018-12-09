@@ -204,3 +204,74 @@ td, th {
 tr:nth-child(even) {
     background-color:#ffccff;
 }
+
+
+
+
+.inputt {
+    width:120px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+     margin-top: 6px;
+    margin-bottom: 16px;
+}
+
+/* Style the submit button */
+#ssub {
+    background-color:#ffccff;
+    color: white;
+}
+
+/* Style the container for inputs */
+.containervalidation {
+    background-color: #f1f1f1;
+    padding: 20px;
+	width:500px;
+	margin-left:400px;
+	
+}
+
+/* The message box is shown when the user clicks on the password field */
+#message {
+    display:none;
+    background: #f1f1f1;
+    color: #000;
+    position: relative;
+    padding: 20px;
+    margin-top: 10px;
+	width:300px;
+	margin-left:500px;
+
+}
+
+#message p {
+    padding: 10px 35px;
+    font-size: 16px;
+
+	
+
+}
+
+/* Shto nje tekst me ngjyre te gjelber dhe nje checkmark kur kerkesat jane mire */
+.valid {
+    color: #00cc66;
+}
+
+.valid:before {
+    position: relative;
+    left: -35px;
+    content: "✔";
+}
+
+/* Shto nje tekst me ngjyre te kalter dhe nje "x" kur kerkesat jane gabim  */
+.invalid {
+    color: blue;
+}
+
+.invalid:before {
+    position: relative;
+    left: -35px;
+    content: "✖";
+}

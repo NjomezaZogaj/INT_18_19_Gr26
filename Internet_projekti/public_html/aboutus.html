@@ -10,7 +10,12 @@
 <script>
     /* Perdorimi i jQuery per te filtruar/kerkuar per elemente specifike.
      Ne kete shembull kemi performuar nje kerkim case-insensitive per items ne nje tabele.
-
+Pershkrimi: Ne përdorim jQuery për të bere loop nëpër
+ çdo rresht të tabelës për të parë nëse ka ndonjë vlerë teksti që përputhet
+  me vlerën e fushës qe e shkruajme. Metoda toggle() fsheh rreshtin (display:none) 
+  që nuk përputhet me kërkimin. Ne përdorim metodën DOM për toLowerCase ()
+   për ta kthyer tekstin në një shkronja te vogla, gjë që e bën kerkimin
+   case-sensitive (psh nese duam te kerkojm Anja,mund te shkruajm anja,ose edhe ANJA).
 */
 $(document).ready(function(){
   $("#myInput").on("keyup", function() {

@@ -8,7 +8,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 <script>
-    /* Perdorimi i jQuery per te filtruar/kerkuar per elemente specifike.
+     /* Perdorimi i jQuery per te filtruar/kerkuar per elemente specifike.
      Ne kete shembull kemi performuar nje kerkim case-insensitive per items ne nje tabele.
 Pershkrimi: Ne përdorim jQuery për të bere loop nëpër
  çdo rresht të tabelës për të parë nëse ka ndonjë vlerë teksti që përputhet
@@ -17,6 +17,7 @@ Pershkrimi: Ne përdorim jQuery për të bere loop nëpër
    për ta kthyer tekstin në një shkronja te vogla, gjë që e bën kerkimin
    case-sensitive (psh nese duam te kerkojm Anja,mund te shkruajm anja,ose edhe ANJA).
 */
+
 $(document).ready(function(){
   $("#myInput").on("keyup", function() {
     var value = $(this).val().toLowerCase();
@@ -539,13 +540,31 @@ function showPosition(position) {
   <p style="color:blue;text-align:Center">Log in if you are a member board</p>
 
   <form id="forma12">
-    <label for="usrname">Username</label>
-    <input class="inputt" type="text" id="usrname" name="usrname" required>
+    <label for="usrname" >Username</label>
 
+    <input class="inputt" type="text" id="usrname" name="usrname" required>
+<script>
+
+function usernamevalid(){
+    var usern = document.getElementById("usrname");
+    var RE = /^[a-zA-Z]{5,10}/;
+    if(!RE.test(usern.value))
+    {
+        alert("You have entered an invalid username");
+        return false;
+    }
+    else
+	    {
+        alert("You have entered a valid username");
+    }
+}
+</script>
     <label for="psw">Password</label>
     <input  class="inputt" type="password" id="psw" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
-    
+    		<button type="button" id="username1" onclick="usernamevalid()" style="margin-left:0px;;width:120px;padding:10px; border-radius: 4px;">Test Username</button>
+
     <input class="inputt" type="submit" id="ssub" value="Submit" style="margin-left:150px;width:120px">
+
   </form>
 </div>
 

@@ -56,3 +56,55 @@
 .dropdown:hover .dropdown-permbajtja {
     display: block;
 }
+#div8 {height:550px;}
+
+#sport1 { float:left;
+margin-left:20px;
+	}
+	#sp1 {border:0.3px solid black;
+	    margin-left:190px;
+		margin-bottom:200px;
+	}
+	#div8 {margin-top:-15px;}
+	
+	
+	#div9{
+	width:370px;
+	height:200px;
+	
+	
+	}
+	#div10{border:1px solid blurywood;
+	width:370px;
+	height:200px;
+	margin-left:500px;
+	margin-top:-195px;
+	}
+	
+	#psiko1 {float:left;
+	margin-left:20px;
+	margin-top:-65px;}
+	
+	#div11 {border:1px solid blurywood;
+	position:Relative;
+	width:370px;
+	height:200px;
+	margin-left:1000px;
+	margin-top:-197px;}
+	#travel1 {float:left;
+	margin-left:20px;
+	margin-top:-65px;}
+	
+	
+		#contact1{float:left;
+	margin-left:20px;
+	margin-top:-85px;}
+	
+	#div12 {border:1px solid blurywood;
+	position:Relative;
+	width:370px;
+	height:200px;
+	margin-left:1000px;
+	margin-top:-100px;}
+	
+	

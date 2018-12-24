@@ -219,9 +219,9 @@ tr:nth-child(even) {
 }
 
 /* Style the submit button */
-#ssub {
+#ssub,#username1 {
     background-color:#ffccff;
-    color: white;
+    color: brown;
 }
 
 /* Style the container for inputs */

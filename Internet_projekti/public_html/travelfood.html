@@ -440,7 +440,38 @@ document.getElementById("demo4").innerHTML=myFunc(5,5);
         </script>
 <img id="cherry" src="cherry.jpg" width="200" height="200" style="margin-left:800px;margin-top:-220px">
 </div>
-<a id="linku" href="homepage.html" class="previous round">&#8249;</a>
+<div>
+<!-- Perdorimi i JS switch-->
+Type 'Hamburger','McDonald','Soda','French fries' on the input field to read interesting fact about them!
+<input type="text" id="myinput">
+<button onclick="func()">Read</button>
+<p id="demo"></p>
+<script>
+function func()
+{
+var txt=document.getElementById("myinput").value;
+var text;
+switch(txt)
+{
+case "Hamburger":
+ text="One fast food hamburger contains meat from up to 100 different cows.";
+break;
+case "McDonald": 
+text="McDonald’s is visited by 90 percent of American children on a monthly basis.";
+break;
+case "Soda":
+text="Fountain soda machines contain fecal bacteria.";
+break;
+case "French Fries": 
+text="French fries are the most popular type of fast food in America. ";
+break;
+default:"Sorry ,you can read a fact about this food in Google!";
+}
+document.getElementById("demo").innerHTML=text;
+}
+</script>
+</div>
+<a id="linku" href="homepage.html" title="Back to Homepage" class="previous round">&#8249;</a>
 
 
 

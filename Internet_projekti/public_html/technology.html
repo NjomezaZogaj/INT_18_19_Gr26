@@ -524,6 +524,36 @@ The rocket was carrying the US Air Force's GPS III SV01 satellite, the first in 
  will update the Global Positioning System. Still used and maintained by the Air Force, the array of GPS satellites
  has become a part of the everyday fabric of life for just about everyone. It's in the palm of your hand, for instance,
  whenever you get directions to a store or restaurant on your smartphone.</p>
+      <p style="color:blue;font-style:italic">Please input a number between 5 and 10 to rate our page..</p>
+
+<input id="demo5" type="text">
+<button type="button" id="testt" onclick="Function2()">Test Rate</button>
+
+<p id="p011"></p>
+
+<script>
+/*Perdorimi i JS error duke perdorur try,catch,throw dhe finally statements */
+function Function2() {
+  var message, x;
+  message = document.getElementById("p011");
+  message.innerHTML = "";
+  x = document.getElementById("demo5").value;
+  try { 
+    if(x == "")  throw "is empty";
+    if(isNaN(x)) throw "is not a number";
+    x = Number(x);
+    if(x >= 10)   throw "is too high.Thank you!";
+	if(x==5) throw "is okay.Thanks!";
+    if(x < 5)  throw "is too low.We will try our best!";
+  }
+  catch(err) {
+    message.innerHTML = "Rate " + err;
+  }
+  finally {
+    document.getElementById("demo5").value = "";
+  }
+}
+</script>
  </div>
   </div>
   <div class="rightcolumn">

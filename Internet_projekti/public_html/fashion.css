@@ -96,7 +96,11 @@ border-radius:13px;
 }
     
 
-
+/* Perdorimi i property animation-timing-function qe specifikon speed curve per nje animacion, ne kete rast kemi perdor ease-in ku animacioni
+ e ka fillimin e ngadalt*/
+.div4 {animation-timing-function: ease-in;}
+/* Perdorimi i property animation per klasen div4 , dhe i @keyframe per te specifikuar kodin e animacionit,ne kete rast teksti leviz nga ana e majte me 0px
+ne 300px*/
 .div4 {
     width: 1000px;
     height: 50px;
@@ -105,9 +109,6 @@ border-radius:13px;
     -webkit-animation: mymove 5s infinite; /* Safari 4.0 - 8.0 */
     animation: mymove1 5s infinite;
 }
-
-#div4 {animation-timing-function: ease-in;}
-
 
 /* Safari 4.0 - 8.0 */
 @-webkit-keyframes mymove1 {
@@ -154,22 +155,26 @@ border-radius:13px;
     padding: 50px;
     display: none;
 }
-
+/* Perdorimi i text-shadow*/
  h2 {text-shadow:3px 2px 3px  #3399ff;}
  
- 
+ /* Perdorimi i CSS 2D Transforms duke perdorur metodat skew(),rotate(),matrix() */
  
  #show1{-ms-transform: skew(20deg); /* IE 9 */
     -webkit-transform: skew(20deg); /* Safari */
- transform: skew(20deg);}
- #show2{
-	 margin-top:30px;
- transform: rotate(20deg);}
+     transform: skew(20deg);}
+	 
+ #show2{margin-top:30px;
+        transform: rotate(20deg);
+		}
  #show3 { 
- transform: matrix(1, -0.3, 0, 1, 0, 0); /* Standard syntax */}
+            transform: matrix(1, -0.3, 0, 1, 0, 0); /* Standard syntax */
+			}
   #show4{
- transform: skew(15deg);}
- 
+           transform: skew(15deg);
+		   
+		}
+ /*Krijimi i nje fonti dhe thirrja e tij permes @font-face rule  */
 @font-face {
   font-family: 'MyWebFont';
   src:url('webfont.woff') format('woff'); /* Pretty Modern Browsers */     
@@ -205,7 +210,7 @@ border-radius:13px;
     }
 }
 
-
+/* Perdorimi i CSS 2D Transforms duke perdorur metodat translate(),rotateY(),scale()*/
 #show11 {
     -webkit-transform: rotateY(170deg); /* Safari */
 	border-radius:13px;
@@ -215,12 +220,16 @@ border-radius:13px;
     -webkit-transform: rotateY(140deg); /* Safari */
 	border-radius:13px;
 }
-#show55{
+#show55
+{
 transform: scale(1,0.9);
-border-radius:13px;}
+border-radius:13px;
+}
 
-#show56{  transform: translate(20px,5px);
-border-radius:13px;}
+#show56{ 
+transform: translate(20px,5px);
+border-radius:13px;
+}
 
 
 #div7 {
@@ -232,13 +241,23 @@ border-radius:13px;}
 }
 
 
-/* Standard syntax */
+/* Perdorimi i keyframes rule qe apikohet tek #div7 duke perdorur disa keyframes selectors  me disa stile CSS */
+/*Sintaksa standarte */
 @keyframes mymove {
     0%   {top: 0px; left: 0px; background: #cce6ff;}
     25%  {top: 0px; left: 20px; background:#ffd9b3;}
     50%  {top: 50px; left: 20px; background: #ffb3b3;}
     75%  {top: 50px; left: 0px; background: #ffccff;}
     100% {top: 0px; left: 0px; background: #cce6ff;}
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes mymove {
+  0%   {top: 0px; left: 0px; background: #cce6ff;}
+  25%  {top: 0px; left: 20px; background: #ffd9b3;}
+  50%  {top: 50px; left: 20px; background: #ffd9b3;}
+  75%  {top: 50px; left: 0px; background: #ffccff;}
+  100% {top: 0px; left: 0px; background: #cce6ff;}
 }
 body {
     background-color: #f1f1f1;

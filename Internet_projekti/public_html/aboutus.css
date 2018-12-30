@@ -42,27 +42,27 @@ background-attachment:Fixed;}
     color: black;
 }
 
-/* Main content */
+/* Permbajtja kryesore */
 .main {
-    margin-left: 200px; /* Same as the width of the sidenav */
-    font-size: 20px; /* Increased text to enable scrolling */
+    margin-left: 200px; 
+    font-size: 20px; 
     padding: 0px 10px;
 }
 
-/* Add an active class to the active dropdown button */
+/* Shto nje klass aktive per te aktivizuar butonin dropdown  */
 .active {
     background-color: #ff9999;
     color: white;
 }
 
-/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+/* Dropdown container (hidden si defualt). */
 .dropdown-container {
     display: none;
     background-color:white;
     padding-left: 8px;
 }
 
-/* Optional: Style the caret down icon */
+/* Opsionale:Stilo ikonen per  shkuar posht tek submenyt */
 .fa-caret-down {
     float: right;
     padding-right: 8px;
@@ -74,34 +74,7 @@ background-attachment:Fixed;}
     .sidenav a {font-size: 18px;}
 }
 
- 
-/*.monthPre{
- color: gray;
- text-align: center;
-}
-.monthNow{
- color: blue;
- text-align: center;
-}
-.dayNow{
- border: 2px solid black;
- color: #FF0000;
- text-align: center;
-}
-.calendar td{
- htmlContent: 2px;
- width: 40px;
-}
-.monthNow th{
- background-color: #000000;
- color: #FFFFFF;
- text-align: center;
-}
-.dayNames{
- background: #0FF000;
- color: #FFFFFF;
- text-align: center;
-}*/
+
  
 .container {
     display: block;
@@ -133,12 +106,12 @@ background-attachment:Fixed;}
     background-color: #eee;
 }
 
-/* On mouse-over, add a grey background color */
+/* Kur e afrojme mausin tek checkbox,background i tij behet me ngjyre te hint(gray) */
 .container:hover input ~ .checkmark {
     background-color: #ccc;
 }
 
-/* When the checkbox is checked, add a blue background */
+/* Kur checkbox te klikohet,background i tij behet me ngjyre pink */
 .container input:checked ~ .checkmark {
     background-color: pink;
 }
@@ -150,12 +123,12 @@ background-attachment:Fixed;}
     display: none;
 }
 
-/* Show the checkmark when checked */
+/*Paraqit checkmark kur te behet check */
 .container input:checked ~ .checkmark:after {
     display: block;
 }
 
-/* Style the checkmark/indicator */
+/* Stilo shenjen e check/indicator (shenja e TIK)*/
 .container .checkmark:after {
     left: 5px;
     top: 2px;
@@ -233,7 +206,7 @@ tr:nth-child(even) {
 	
 }
 
-/* The message box is shown when the user clicks on the password field */
+/* Kur useri klikon ne fushen e passwordit ,message box paraqitet*/
 #message {
     display:none;
     background: #f1f1f1;

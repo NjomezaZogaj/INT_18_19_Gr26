@@ -11,15 +11,18 @@
 <link rel="stylesheet" href="fashion.css" type="text/css">
 <script src="fashion.js"></script>
 <script>
+/* Perdorimi i jQuery duke perdorur metoden append() per paraqitjen e teksteve ne menyra te ndryshme .
+Elementet jane krijuar me text/HTML,jQuery dhe Javascript/DO */
 function appendText() {
-    var txt1 = "<ol start='4'><li ><q>How can you live the high life if you do not wear the high heels?</q> —Sonia Rykiel.</li></ol>";              // Create text with HTML
-    var txt2 = "<ol start='5'><li ><q>Shoes transform your body language and attitude. They lift you physically and emotionally.</q> —Christian Louboutin.</li></ol>";  // Create text with jQuery
-    var txt3 = document.createElement("p");
-    txt3.innerHTML = "<ol start='6'><li ><q>Girls do not dress for boys. They dress for themselves, and of course, each other. If girls dressed for boys, they’d just walk around naked at all times.</q>—Betsey Johnson.</li></ol>";               // Create text with DOM
-    $("body").append(txt1, txt2, txt3);     // Append new elements
+    var txt1 = "<ol start='7'><li ><q>How can you live the high life if you do not wear the high heels?</q> —Sonia Rykiel.</li></ol>";              // Krijo text me HTML
+    var txt2 = "<ol start='8'><li ><q>Shoes transform your body language and attitude. They lift you physically and emotionally.</q> —Christian Louboutin.</li></ol>";  // Krijo text me jQuery 
+    var txt3 = document.createElement("p"); // Krijo permes DOM
+    txt3.innerHTML = "<ol start='9'><li ><q>Girls do not dress for boys. They dress for themselves, and of course, each other. If girls dressed for boys, they’d just walk around naked at all times.</q>—Betsey Johnson.</li></ol>";               // Create text with DOM
+    $("#appendtextt").append(txt1, txt2, txt3);     // Append new elements
 }
 	</script>
         <script> 
+		/*Perdorimi i jQuery duke perdorur metoden slideToggle() */
 $(document).ready(function(){
     $("#flip").click(function(){
         $("#panel").slideToggle("slow");
@@ -27,7 +30,7 @@ $(document).ready(function(){
 });
 </script>
 <script>
-//Perdorimi i jQuery attr() metodes qe perdoret me marr(Get) vlerat e atributit 
+//Perdorimi i jQuery attr() metodes qe perdoret me marr(Get) vlerat e atributit , e verejm tek butoni Show link
 
 $(document).ready(function(){
     $("#vsbuton").click(function(){
@@ -51,7 +54,7 @@ background-repeat:no-repeat;
 margin:Auto;
 width:1000px;} */
 
-
+/* Perdorimi i klases .glow duke perdorur property ANIMATION me vetitet e tij, per stilimin e tekstit HELLO FASHION,gjithashtu perdorimi i @-webkit-keyframes */
 .glow {
   font-size: 80px;
   color: #fff;
@@ -107,6 +110,8 @@ width:1000px;} */
   <p id="demo" style="margin-left:1100px;color:violet;"></p>
     
 <script>
+/*Perdorimi i JS Switch  duke perdorur metoden The getDay() qe kthen diten e javes si numer mes 0 dhe 6 
+(Sunday=0, Monday=1, Tuesday=2 ..).Ky shembull perdor numrin per diten e javes per te kalkuluar emrin e dites se javes */
 var day;
 switch (new Date().getDay()) {
     case 0:
@@ -208,8 +213,8 @@ document.getElementById("demo").innerHTML = "Today is " + day;
    in which people present themselves. A fashion can become the prevailing style in behaviour or manifest
    the newest creations of designers, technologists, engineers, and design managers.
   </div><br>
-  <!-- perdorimi i keyframes fashion.css #div4 -->
-  <div class="div4" id="div4">"What you wear is how you present yourself to the world, especially today, when human contacts are so quick. Fashion is instant language." <b>—Miuccia Prada</b></div>
+  <!-- Perdorimi i property animation-timing-function per klasen #div4 dhe  i @keyframes ,e gjejme tek fashion.css -->
+  <div class="div4" >"What you wear is how you present yourself to the world, especially today, when human contacts are so quick. Fashion is instant language." <b>—Miuccia Prada</b></div>
   <h2 style="text-align:center;">Striking Photos of Cultural Fashions You Have to See</h2><br>
   <div class="row1">
     <div class="column1">
@@ -256,6 +261,7 @@ document.getElementById("span1").innerHTML = cities[0];
 </script>
 <p style="text-align:center;"><em>Listen 15 Things You Didn't Know About Coco Chanel...</em></p>
  <p style="text-align:center;">
+ <!-- Perdorimi i audios -->
      <audio controls style="margin-left:30px;background-color:pink;">
 <source src="cocochanel.mp3" type="audio/mp3">
 </audio></p>
@@ -267,13 +273,15 @@ document.getElementById("span1").innerHTML = cities[0];
 <button onclick="myFunction()" style="border-radius:8px;padding:8px;color:white;background-color:rgb(240, 179, 255)">The tallest models of all time are:</button>
 <i id="mod2"></i><br><br>
 <script>
+/* Perdorimi i nje JS vektori dhe paraqitja e te gjitha elementeve te tij */
 var models = ["Michelle Buswell", " Karlie Kloss", "Amazon Eve", "Hana Soukupova"];
 document.getElementById("mod2").innerHTML = models;
-
+/*Perdorimi i nje funksioni i cili si rezultat kthen vektorin e lartecekur te sortuar permes JS metodes sort() */
 function myFunction() {
     models.sort();
     document.getElementById("mod2").innerHTML = models;
-}</script>
+}
+</script>
 <button onClick="numrimaksimal()" style="border-radius:8px;padding:8px;color:white;background-color:rgb(240, 179, 255)">The most expensive shoes cost:</button>
 <i id="demo1"></i><br><br>
 	<button onclick="myFunction1()" style="border-radius:8px;padding:8px;color:white;background-color:rgb(240, 179, 255)">Top 5 richest fashion designers:</button>
@@ -346,7 +354,7 @@ in high-profile settings. The show features some of the world's leading fashion 
  Jasmine Tookes,  <span id="modelet"></span> and Josephine Skriver.</p>
  <p>You can see photos of VS's models here: <a href="https://ww.victoriassecret.com/fashion-show" target="_blank" id="w3s">Victoria Secret</a></p>
  <p><button id="vsbuton" style="background-color:violet;padding:10px;">Show link</button></p>
-<!-- PERDORIMI I METODES CONCAT() TEK ARRAY-->
+<!-- Perdorimi i JS metodes concat() tek array per bashkimin e dy vektoreve te cekur-->
 <script>
 var arr1 = ["Sara Sampaio", "Romee Strijd"];
 var myModels = arr1.concat(["Stella Maxwell", "Taylor Marie Hill", "Martha Hunt "]); 
@@ -452,12 +460,10 @@ audience of media and fashion buyers. Over 50 catwalk shows on the official show
 <div>
 <h4 STYLE="text-align:center;color:#cc3300;">SOME  INTERESTING FAMOUS FASHION DESIGNERS FACTS</h4>
 <i>1.Click the button to check  if it's TRUE that Queen Elizabeth I ordered that all women should wear hats on Sunday.</i>
-
-
 <button onclick="funksioni1()">Click</button>
-
 <i id="prova1" style="text-transform:uppercase;color:red;"></i>
-<!-- PERDORIMI I METODES JS TEST() tek REGEX-->
+<!-- PERDORIMI I JS metodes test() tek REGEX.Kjo metode teston per nje match ne nje string.Kjo metode kthen true nese 
+e gjen nje match,perndryshe kthen false--> 
 <script>
                                 function funksioni1() {
     var str = "Wear hats on Sunday";
@@ -467,10 +473,11 @@ audience of media and fashion buyers. Over 50 catwalk shows on the official show
 }
 </script>
 <br>
-<!--PERDORIMI I METODES EXEC() TEK RegEX -->
 <i>2.Click the button to read the name of the inventor of modern bikini.</i>
 <button onclick="funksioni2()">Click</button>
 <i id="prova2" style="text-transform:uppercase;color:red;"></i>
+<!--PERDORIMI I METODES exec() TEK RegEX .Kjo metode teston per nje match ne nje string.Kjo metode kthen tekstin qe eshte perputhur nese e gjen nje match
+perndryshe kthen null. -->
 <script>
 function funksioni2() {
     var str = "Louis Rerard named it after the Bikini Atoll where the U.S. did extensive nuclear testing";
@@ -489,8 +496,11 @@ function funksioni2() {
 <i>5.Until 19th century, men’s shirts were considered to be underwear.</i><br>
 6.<i id="prova3"></i>
 In 1983, Calvin Klein was listed on the International Best Dressed List
+<br>
+<button onclick="appendText()">Click here to Read 3 more facts!!</button>
+<div id="appendtextt"></div>
 <script>
-<!--Perdorimi i nje konstruktori -->
+<!--Perdorimi i nje konstruktori dhe krijimi i objektit-->
 // Constructor function for Person objects
 function Person(first, last, year, eye) {
     this.firstName = first;

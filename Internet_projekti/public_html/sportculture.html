@@ -4,7 +4,8 @@
 
 <link rel="stylesheet" href="sportculture.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script> 
+<script>
+/* Perdorimi i jQuery duke perdorur metoden slideToggle()*/ 
 $(document).ready(function(){
     $("#flip").click(function(){
         $("#panel").slideToggle("slow");
@@ -114,6 +115,7 @@ box-sizing:border-box;
 }
 #fig1{ border-radius:10px;
 }
+/* Perdorimi i multiple columns me property e tij*/
 #multiple{
     -webkit-column-count: 3; /* Chrome, Safari, Opera */
     column-count: 3;
@@ -124,11 +126,11 @@ box-sizing:border-box;
 }
 
 .sport {
-  
+  /*Perdorimi i transition */
     -webkit-transition: width 2s, height 2s, -webkit-transform 2s; /* Safari */
     transition: width 2s, height 2s, transform 2s;
 }
-
+/*Perdorimi i transform */
 .sport:hover {
     width: 200px;
     height: 200px;
@@ -175,6 +177,7 @@ box-sizing:border-box;
   transform: translate(-50%, -50%);
   text-align: center;
 }
+
 #div5{
 margin-left:950px;
 margin-top:-450px;}

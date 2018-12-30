@@ -9,6 +9,7 @@
 
 
 <script> 
+/* Perdorimi i jQuery metodes slideToggle() me parametrin speed (ne kete rast vlera slow)*/
 $(document).ready(function(){
     $("#flip").click(function(){
         $("#panel").slideToggle("slow");
@@ -17,6 +18,7 @@ $(document).ready(function(){
 
 </script>
 <script>
+/* Perdorimi i jQuery duke perdorur metoden fadeIn() dhe parametrin speed */
 $(document).ready(function(){
     $("#prova").click(function(){
         $("#para1").fadeIn();
@@ -26,6 +28,7 @@ $(document).ready(function(){
         $("#para5").fadeIn(3000);
     });
 });
+/* Perdorimi i jQuery duke perdorur metodat hide() dhe show()*/
 $(document).ready(function(){
     $("#hide").click(function(){
         $("#demo").hide();
@@ -34,14 +37,23 @@ $(document).ready(function(){
         $("#demo").show();
     });
 });
-
+/* Perdorimi i HTML5 Drag and Drop
+1.Per te bere elementin draggable ,duhet te vendosim atributin draggable ne true,
+2.Eventi ondragover specifikon ku te behet drop dragged data*/
 function allowDrop(ev) {
     ev.preventDefault();
 }
-
+/*Metoda  dataTransfer.setData() vendos data type dhe vleren e dragged data*/
 function drag(ev) {
     ev.dataTransfer.setData("text", ev.target.id);
 }
+/* Kur dragged data te behet drop, nje event drop parqitet.Ne shembullin ne vijim,atributi ondrop e thirr nje funksion,drop(event)
+Kodi shpjegohet si ne vijim:
+Call preventDefault() to prevent the browser default handling of the data (default is open as link on drop)
+Get the dragged data with the dataTransfer.getData() method. This method will return any data that was set to the same type in the setData() method
+The dragged data is the id of the dragged element ("drag1")
+Append the dragged element into the drop element
+*/
 
 function drop(ev) {
     ev.preventDefault();
@@ -75,6 +87,7 @@ border-radius:4px;}
 
 
 <script>
+/* Perdorimi i jQuery per te ndryshuar ngjyren e prapavijes duke perdorur onmouseover dhe onmouseout */
 function bgChange(bg) {
     document.body.style.background = bg;
 }
@@ -133,7 +146,7 @@ function bgChange(bg) {
   hat can impact thought and behavior, ranging from biological influences to social pressures.
   
   <strong><span id="var2"></span> Interesting Psychological Facts That Explain Why We Are The Way We Are</strong>
-    <!-- This example calls a function which performs a calculation and returns the result:-->
+    <!-- Ky shembull thirr nje funksion i cili kryen nje kalkulim dhe kthen rezultatin-->
   <script>
 var x = myFunction(1, 13);
 document.getElementById("var2").innerHTML = x;
@@ -161,6 +174,7 @@ function myFunction(a, b) {
 </span></pre></p>
 <button onclick="myFunction()" id="btn1">Read more</button>
 <script>
+/*Perdorimi i nje funksioni i cili perdoret per te paraqitur tekstin te cilin e kemi fshehur permes display:none.*/
 function myFunction() {
   var dots = document.getElementById("dots");
   var moreText = document.getElementById("more");
@@ -333,7 +347,7 @@ Shfletuesi juaj nuk mbeshtet videot me HTML5.
 
 </div>
 
-<!-- Definimi i funksioneve dhe localStorage -->
+<!-- Definimi i funksioneve duke perdorur JS DOM per  elementin <video> dhe perdorimi i  localStorage -->
 <script>
 var myVideo=document.getElementById("video1");
 
@@ -430,9 +444,10 @@ of Americans with heart conditions <mark>(27 million)</mark>, diabetes <mark>(26
 <pre> The Anxiety and Depression Association of America (ADAA) is an international
  nonprofit membership organization (with more than 1,800 professional mental health members) 
  and a leader in education, training, and research for anxiety, depression and related disorders.</pre>
-<div id="div12"  ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-<Br>
+<div id="div12"  ondrop="drop(event)" ondragover="allowDrop(event)">
 <img id="drag1" src="organizata.jpg" draggable="true" ondragstart="drag(event)" width="330" height="60">
+</div>
+<Br>
 <div id="div12" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
 <br>
 <p style="Text-align:Center;color:Blue;">National Institute of Mental Health</p>

@@ -33,9 +33,7 @@
 .quiz-answer {
   position: relative;
   display: flex;
-  flex-flow: row nowrap;
   align-items: center;
-  justify-content: flex-start;
   background: linear-gradient(#ffdf44, white);
   box-shadow: 0px 2px 2px 1px rgba(0, 10, 20, 0.07);
 }
@@ -49,7 +47,6 @@
   height: 1em;
   width: 1em;
   margin-left: 1em;
-  flex: 0 0 auto;
   border-radius: 50%;
   border: 0.3em solid #dd0077;
   background-color:#666677;
@@ -109,13 +106,12 @@ input:checked ~ .circle {
 .correct input:checked ~ .circle {
   border-color: #00ccaa;
 }
-
+/* Perdorimi i animacionit ne rastin kur inputi behet checked*/
 input:checked ~ .feedback {
   visibility: visible;
   animation: feedbackfade 3s ease 3s;
-  animation-fill-mode: forwards;
 }
-
+/* Perdorimi i @keyframes ashtu qe kur inputi behet checked pergjigja te largohet per 3 sekonda ne baze te opacity */
 @keyframes feedbackfade {
     from {opacity: 1;}
     to {opacity: 0;}

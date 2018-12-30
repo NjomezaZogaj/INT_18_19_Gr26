@@ -202,16 +202,17 @@ caption { caption-side:bottom;}
 
 #div12 {
     width: 350px;
-    height: 70px;
+    height: 100px;
     padding: 10px;
     border: 1px solid #aaaaaa;
 }
+/* Perdorimi i property transition*/
 #imgg {
   
     -webkit-transition: width 2s, height 2s, -webkit-transform 2s; /* Safari */
     transition: width 2s, height 2s, transform 2s;
 }
-
+/*Perdorimi i property transform per te rrotulluar figuren per 360 shkalle kur afrojm mausin mbi te */
 #imgg:hover {
     width: 200px;
     height: 200px;

@@ -11,14 +11,15 @@
        <link rel="stylesheet" href="travelfood.css" type="text/css">
  
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        		<!-- PERDORIMI I JQUERY duke perdorur selektroin tr:odd per ngjyren e prapavijes-->
 
 <script>
+/* Perdorimi i jQuery duke perdorur selektorin tr:odd per ngjyrosjen e prapavijes te rreshtave tek permes metodes css()*/
 $(document).ready(function(){
     $("tr:odd").css("background-color", "#ffe6cc");
 });
 </script>
         <script> 
+		/* Perdorimi i jQuery duke perdorur  metoden slideToggle() duke perdorur parametrin speed ,kjo metod qendron ne mes metodes slideDown() dhe slideUp()*/
 $(document).ready(function(){
     $("#flip").click(function(){
         $("#panel").slideToggle("slow");
@@ -167,6 +168,7 @@ Try tulips in spring, pick summer fruits in the UK, dive in the autumn and embra
         
 </div>
 <script>
+/* Perdorimi i nje JS Dom ,permes te cilit kur klikojme ne butonin e specifikuar,Nese elementi <div> eshte display:none athere ai do te paraqitet, ose anasjelltas*/
 function myFunction() {
     var x = document.getElementById("myDIV");
     if (x.style.display === "none") {
@@ -192,6 +194,8 @@ function myFunction() {
 
 
 <script>
+/* Perdorimi inje funksioni i cili si rezultat kthen nje tekst nese teksti i specifikuar ne div eshte i njejte me tekstin qe ne e specifikojm,ne te kunderten
+kthen si rezultat tekstin e njejt si te DIV*/
 function myFunction2() {
     var y = document.getElementById("myDIV2");
     if (y.innerHTML === "<h3>Top things to do in Germany</h3>") {
@@ -206,7 +210,8 @@ and the Caliph's Palace of Mshatta.<br>\n\
  treasures. For an exercise fix, climb the 533 steps up the Dom’s south tower to the base of \n\
 the steeple that dwarfed all buildings in Europe until Gustave Eiffel built a certain tower in \n\
 Paris. The Domforum visitor centre is a good source of info and tickets.";
-    } else {
+    } 
+	else {
         y.innerHTML = "<h3>Top things to do in Germany</h3>";
     }
 }
@@ -409,11 +414,13 @@ Which are the Best Countries in the World for Food? Let’s start! Don’t get o
 	
 
     <script>
+	/* Perdorimi i disa metodave te JS array sic jane pop(),shift(),slice()*/
     var fruits = ["Avocado","Banana","Cherries", "Mango", "Apple", "Orange"];
 document.getElementById("demo1").innerHTML = fruits.pop();
 document.getElementById("demo2").innerHTML = fruits.shift();
 document.getElementById("demo3").innerHTML = fruits.slice(1,2);</script>
 <script>
+/* Perdorimi i JS Dom per stilimin e madhesise dhe stilit te fontit*/
 document.getElementById("paragrafi1").style.fontSize = "larger";
 document.getElementById("paragrafi1").style.fontStyle = "italic";
 </script>
@@ -441,12 +448,12 @@ document.getElementById("demo4").innerHTML=myFunc(5,5);
 <img id="cherry" src="cherry.jpg" width="200" height="200" style="margin-left:800px;margin-top:-220px">
 </div>
 <div>
-<!-- Perdorimi i JS switch-->
 Type 'Hamburger','McDonald','Soda','French fries' on the input field to read interesting fact about them!
 <input type="text" id="myinput">
 <button onclick="func()">Read</button>
 <p id="demo"></p>
 <script>
+/* Perdorimi i JS switch*/
 function func()
 {
 var txt=document.getElementById("myinput").value;
@@ -465,7 +472,7 @@ break;
 case "French Fries": 
 text="French fries are the most popular type of fast food in America. ";
 break;
-default:"Sorry ,you can read a fact about this food in Google!";
+default: text="Sorry ,you can read a fact about this food in Google!";
 }
 document.getElementById("demo").innerHTML=text;
 }

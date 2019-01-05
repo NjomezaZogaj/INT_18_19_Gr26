@@ -1,12 +1,16 @@
 <!DOCTYPE html>
-<html manifest="manifest.appcache">
+<html manifest="demo.appcache">
 <head>
 <link rel="stylesheet" type="text/css" href="menu.css">
-<link rel="stylesheet" type="text/css" href="menu1.css">
 <title>
 Everything you need to know..
 </title>
 <Style>
+.footer {
+background-color:#ffdccc ;
+ padding:1px;
+  text-align: left;
+}
 #div1 {background-color:darkcyan;}
 a{ color:lightblue;
 font-size:23px;
@@ -18,7 +22,7 @@ float:right;
 margin-top:5px;}
 
 
-
+/*Perdorimi i MULTIPLE COLUMNS */
 #div2 { column-count:5;
 column-gap:10px;
 column-rule:1px solid;
@@ -61,7 +65,7 @@ position:relative;
 left:995px;
 bottom:500px;}
 
-
+/*Perdorimi i pseudo-klasave sic jane :visited, :hover dhe :active tek linqet */
 a:visited {color:black;}
 a:hover{color:lightblue;}
 a:active{color:black;}
@@ -79,7 +83,8 @@ a:active{color:black;}
       <a>Topics</a> 
 
     <div class="dropdown-permbajtja">
-		   
+		   	<a href="technology.html">Technology</a>
+
       <a href="sportculture.html">Sport and Culture</a>
       <a href="psikologji.html">Psychology</a>
 
@@ -141,12 +146,13 @@ fashion, food and travel.
 
 </div>
 <br>
-<div id="div3" style="background-color:BurlyWood;height:600px;">
+<div id="div3" style="background-color:#ffccb3;height:600px;">
 <br>
 <header>
 <p style="font-size:34px;font-style:italic;text-indent:80px;text-shadow:2px 3px white;">
 10 INTERESTING FASHION FACTS
 </p>
+<!-- Perdorimi i listes se renditur (ordered list <ol>)-->
 <ol id="ol1">
 <li>Napoleon Bonaparte made a major contribution to fashion.</li>
 <li>Tutankhamun made eyeliner poplar.</li>
@@ -161,14 +167,14 @@ fashion, food and travel.
 </ol>
 </header>
 <a href="fashion.html"><p id="p2" style="font-size:large;font-style:italic;">If you need to know more about fashion clik here.. &gt&gt</p>  </a>
-<div id="div4" style="border:1px solid burlywood;border-radius:30px;width:500px;height:300px;"></div>
-<div id="div5"  style="border:1px solid burlywood;width:300px;height:150px;"></div>
-<div id="div6"  style="border:1px solid burlywood;width:300px;height:150px;"></div>
-<div id="div7"  style="border:1px solid burlywood;width:300px;height:150px;"></div>
+<div id="div4" style="border:1px solid #ffccb3;border-radius:30px;width:500px;height:300px;"></div>
+<div id="div5"  style="border:1px solid #ffccb3;width:300px;height:150px;"></div>
+<div id="div6"  style="border:1px solid #ffccb3;width:300px;height:150px;"></div>
+<div id="div7"  style="border:1px solid #ffccb3;width:300px;height:150px;"></div>
 
 </div>
 <br>
-<div id="div8" style="background-color:BurlyWood;">
+<div id="div8" style="background-color:#ffccb3;">
 
 <div id="div9">
 <br>
@@ -245,11 +251,14 @@ If you want to know more about us,just click <br><a href="aboutus.html"><span st
    give you the help you need.</pre>
 <a href="contact.html">Start Here ...</a>
   </div>
-	<div style="background-color:rgba(255, 99, 71, 0.5);height:40px">
+	<!--<div style="background-color:rgba(255, 99, 71, 0.5);height:40px">
 <p style="text-indent:20px;border:1px rgba(255,99,71,0.5);padding:10px;">Copyright &copy 2018-All Right Reserved</p>
-</div>	
+</div>-->
 </div>
-
+<div class="footer">
+  <p style="text-indent:20px;">Copyright &copy 2018-All Right Reserved</p>
+</div>
+  
 
 </body>
 </html>

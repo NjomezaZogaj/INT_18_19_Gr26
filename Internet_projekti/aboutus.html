@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html manifest="demo.appcache">
 <head>
 <title>About us</title>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -27,7 +27,7 @@ $(document).ready(function(){
   });
 });
 </script>
-<!--PERDORIMI I JQUERY DUKE PERDORUR METODEN ON() permes te ciles ne kete rast shtojme 3 evend handlers tek elementi <p>  -->
+<!--PERDORIMI I JQUERY DUKE PERDORUR METODEN ON() permes te ciles ne kete rast shtojme 3 event handlers tek elementi <p>  -->
 <script>
 $(document).ready(function(){
     $("#qq").on({
@@ -58,6 +58,8 @@ function clickCounter() {
 
 </script>
 <style>
+body{overflow-x:hidden;}/*Perdorimi i elementit overflow-x qe eleminon horizontal scrollbar*/
+
 * {
     box-sizing: border-box;
 }
@@ -181,6 +183,8 @@ height:180px;}
     <i class="fa fa-caret-down"></i>
   </button>
   <div class="dropdown-container">
+      <a href="technology.html">Technology</a>
+
     <a href="sportculture.html">Sport and Culture</a>
     <a href="psikologji.html">Psychology</a>
   </div>
@@ -250,6 +254,7 @@ for (i = 0; i < dropdown.length; i++) {
 <canvas id="myCanvas" width="250" height="200" style="border:1px solid blurywood;">
 Your browser does not support the HTML5 canvas tag.</canvas>
 <script>
+/* Perdorimi i elementit canvas duke perdorur disa nga metodat si beginPath(), arc() per vizatimin e rrethit, stroke() per te vendosur vijat, font,fillText()*/
 var c = document.getElementById("myCanvas");
 var ctx = c.getContext("2d");
 ctx.beginPath();
@@ -287,6 +292,7 @@ ctx.fillText("**********",89,140);
 </script> </div>
  
  <div id="div4">
+ <!--Perdorimi i svg elementit duke perdorur elementin <ellipse> per te vizatuar elipsen si dhe elementin <text> per te shkruar text -->
 <svg height="400" width="700">
   
   <ellipse cx="130" cy="90" rx="105" ry="75" fill="#ffccff" />
@@ -328,6 +334,7 @@ Sorry, your browser does not support inline SVG.
 </div><br><br><Br><br>
 
 <script>
+/*Perdorimi i nje funksionin JS DOM duke perdorur style property per te mos paraqitur elementin div  */
 function myFunction() {
     document.getElementById("panel").style.display = "block";
 }
@@ -338,7 +345,7 @@ function myFunction() {
 
 <div  id="div5" style="border:1px solid black;width:700px;height:800px;">
 <p style="text-align:center;font-weight:bold;"><i>	&hearts;	&hearts;	&hearts;Let us know more about you!	&hearts;	&hearts;	&hearts;</i>
-
+<!--Perdorimi i elementit <select> te formes -->
 <form id="forma11">
 <p><b> <em>Where are you from?</em></b></p>
 <select id="sel" name="cities" required>
@@ -356,7 +363,7 @@ function myFunction() {
 
 
 <p><b> <em>What are your favourite sports?</em></b></p>
-
+<!-- Perdorimi i input type="checkbox" per te definuar nje checkbox duke perdorur CSS per ta stiluar checkbox-in -->
 <label class="container">Footboll
   <input type="checkbox" name="football">
   <span class="checkmark"></span>
@@ -377,7 +384,7 @@ function myFunction() {
   <input type="checkbox" name="Other">
   <span class="checkmark"></span>
 </label>
-
+<!-- Perdorimi i elementit <datalist>  qe specifikion nje list te opsioneve pre-definded per nje <input> element -->
 <p><b><em>Which city do you want to visit?</em></b></p>
 <input list="cities"  class="cities" required>
 <datalist id="cities">
@@ -423,7 +430,7 @@ function myFunction() {
 </div>
 
 <script>
-/*Perdorimi i jQuery duke perdorur form eventin per paraqitjen e nje alert box kur klikojm ne butonin submit  */
+/*Perdorimi i jQuery duke perdorur form eventin "submit" per paraqitjen e nje alert box kur klikojm ne butonin submit  */
 $(document).ready(function(){
     $("#forma11").submit(function(){
         alert("Thank you for your information...");
@@ -437,7 +444,7 @@ $(document).ready(function(){
 		<p style="font-size:22px;font-family:Monospace;text-decoration:underline;color:#ff99cc;">OUR TEAM</p>
 <dl>
 <dt>-Tomas Jurcik</dt>
-<dd><em>Tomas is a seasoned comp&ben expert having spent almost <em id="numer"></em> years in various senior C&B. </em> </dd><BR>
+<dd><em>Tomas is a seasoned comp&ben expert having spent almost <em id="numer"></em> years in various senior C&B. </em> </dd></br>
 <script><!-- Perdorim i nje JS operatori per shumezim *-->
 var x=4,y=5,z;
 z=x*y;
@@ -450,7 +457,7 @@ var str1="Carl";
 var str2="Gustav";
 document.getElementById("var1").innerHTML=str1+" "+str2;
 </script>
-<dd><em>Carl Gustav is board member of an international investment bank.</em></dd><BR>
+<dd><em>Carl Gustav is board member of an international investment bank.</em></dd></br>
 <dt>-Jan Hermann</dt>
 <dd><em>Jan has many years of experience in data processing and analysis.</em></dd>
 </dl>
@@ -508,7 +515,7 @@ document.getElementById("var1").innerHTML=str1+" "+str2;
 <div id="doc" width="1000" style="margin-left:500px">
 
 	
-<!--PERDORIMI I HTML5 GEOLOCATION PER KOORDINATA-->
+
 
 <p>Click the button to get our coordinates.</p>
 
@@ -517,6 +524,7 @@ document.getElementById("var1").innerHTML=str1+" "+str2;
 <p id="demo"></p>
 
 <script>
+/*PERDORIMI I HTML5 GEOLOCATION PER KOORDINATA */
 var x = document.getElementById("demo");
 
 function getLocation() {
@@ -544,7 +552,8 @@ function showPosition(position) {
 
     <input class="inputt" type="text" id="usrname" name="usrname" required>
 <script>
-
+/* Perdorimi i nje funksioni per te validuar input field e username duke perdorur regex,pra lejohen shkronjat e vogla dhe te medha nga a-z dhe gjatesia duhet te jet
+min 5 karaktere dhe max 10*/
 function usernamevalid(){
     var usern = document.getElementById("usrname");
     var RE = /^[a-zA-Z]{5,10}/;
@@ -577,6 +586,7 @@ function usernamevalid(){
 </div>
 				
 <script>
+/* */
 var myInput = document.getElementById("psw");
 var letter = document.getElementById("letter");
 var capital = document.getElementById("capital");
@@ -615,7 +625,7 @@ myInput.onkeyup = function() {
     capital.classList.add("invalid");
   }
 
-  // valdio numrat
+  // valido numrat
   var numbers = /[0-9]/g;
   if(myInput.value.match(numbers)) {  
     number.classList.remove("invalid");
@@ -625,7 +635,7 @@ myInput.onkeyup = function() {
     number.classList.add("invalid");
   }
   
-  // valdio gjatesin
+  // valido gjatesine e karaktereve
   if(myInput.value.length >= 8) {
     length.classList.remove("invalid");
     length.classList.add("valid");
